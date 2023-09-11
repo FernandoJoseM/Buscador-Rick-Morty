@@ -1,0 +1,141 @@
+.principal_content{
+    padding: 0 1.2rem;
+}
+.principal_content h1{
+    text-align: center;
+    margin-top:1rem;
+    color: white;
+    text-transform: uppercase;
+} 
+form{
+    height: auto;
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+form input{
+    height: 3rem;
+    width: 60%;
+    margin-left: 25%;
+    border-radius:1rem;
+    border: 1px solid #80f569;
+    background-color: transparent;
+    color: white;
+    font-size: 1.2rem;
+}
+form input::placeholder{
+    color: rgb(128, 245, 105,0.5);
+    font-size: 1rem;
+    padding: 1rem;
+}
+form button{
+    height: 3rem;
+    border-radius:1rem;
+    background-color: transparent;
+    color: #80f569;
+    border: 1px solid #80f569;
+    margin-left:1rem;
+}
+form button:hover{
+    transform: scale(1.2);
+}
+.location{
+    height: 6rem;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #80f569;
+    margin: 0 auto;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    padding: 0 0.1rem;
+    color: #80f569;
+}
+.location ul{
+   display: flex;
+   gap: 1rem;
+   justify-content: center; 
+}
+.location span{
+    color: white;
+    
+}
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.resident{
+    width: 100%;
+    max-width: 300px;
+    background-color: #366135;
+    color: white;
+    border-radius: 1em;
+    overflow: hidden;
+    border: 1px solid #80f569;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.resident__header{
+    position: relative;
+}
+.resident__status{
+    position: absolute;
+    top: 2.5em;
+    background-color: #072226;
+    width: 35%;
+    padding: 0.3em 0.7em;
+    border-radius: 0 0.5em 0.5em 0 ;
+    display: flex;
+    gap: 0.7em;
+    align-items: center;
+}
+.resident__status__circle{
+    display: block;
+    width: 0.8em;
+    aspect-ratio: 1;
+    background-color:#aaa;
+    border-radius: 50%;
+}
+.Alive{
+    background-color: rgb(47, 255, 116);
+}
+.Dead{
+    background-color: red;
+}
+.resident__body{
+    padding: 1.5em 1em 2.5em;
+}
+.resident__name{
+    text-align: center;
+    margin-bottom: 0.7em;
+    font-weight: 700;
+}
+.resident__separator{
+    margin-bottom:0.5em;
+    border-color:#aaa3;
+}
+.resident__list{
+    display: grid;
+    gap: 0.7em;
+}
+.resident__item{
+    display: flex;
+    flex-direction: column;
+}
+.resident__label{
+    font-size: 0.8em;
+    padding-left:1em;
+    color:#aaa;
+}
+.resident__value{
+    font-weight: 500;
+}
+@media(max-width:768px){
+    .content{
+        grid-template-columns: 1fr 1fr;
+    }
+    .location{
+        font-size: 1.2rem;
+        padding-top:0.8rem;
+    }
+}
